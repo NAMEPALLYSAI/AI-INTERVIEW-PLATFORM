@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PrepLine — AI Interview Preparation Platform
 
 Web app for mock interviews: register, log in, upload a resume, answer generated questions, and review scored feedback.
@@ -86,3 +87,6 @@ uvicorn main:app --reload --host 127.0.0.1 --port 8000
 6. **Feedback page** — score, strengths, and improvements
 
 If `OPENAI_API_KEY` is set, question generation and feedback use the model in `.env`. Without a key, the built-in question bank and scoring rules still run.
+=======
+# AI-INTERVIEW-PLATFORM
+>>>>>>> 857c87d7755ee3fcd805144915c40e2d0cee992c
