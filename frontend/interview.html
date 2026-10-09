@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrepLine · Interview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav" id="nav"></nav>
+    <header class="page-head">
+      <div class="kicker">Interview questions</div>
+      <h1 id="sessionTitle">Start a mock interview</h1>
+    </header>
+    <form id="startForm" class="card">
+      <label for="targetRole">Target role</label>
+      <input id="targetRole" required placeholder="e.g. Backend Engineer intern" />
+      <label for="resumeId">Resume</label>
+      <select id="resumeId"></select>
+      <button type="submit" style="margin-top:16px">Generate questions</button>
+      <p class="error" id="startError"></p>
+    </form>
+    <section class="card" style="margin-top:20px">
+      <div id="questionList"><p class="muted">Questions appear here after you start a session.</p></div>
+      <p><a class="btn" id="feedbackLink" hidden href="/feedback.html">Open feedback</a></p>
+    </section>
+    <footer>PrepLine · AI Interview Preparation Platform</footer>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/interview.js"></script>
+</body>
+</html>

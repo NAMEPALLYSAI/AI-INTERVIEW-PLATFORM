@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrepLine · Feedback</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav" id="nav"></nav>
+    <header class="page-head">
+      <div class="kicker">Feedback</div>
+      <h1>See how the answers land.</h1>
+      <p class="muted">Each saved answer is scored for structure, relevance, and specificity. Add OPENAI_API_KEY for richer coaching language.</p>
+    </header>
+    <label for="interviewSelect">Interview session</label>
+    <select id="interviewSelect"></select>
+    <div id="feedbackHost" style="margin-top:20px"></div>
+    <footer>PrepLine · AI Interview Preparation Platform</footer>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/feedback.js"></script>
+</body>
+</html>

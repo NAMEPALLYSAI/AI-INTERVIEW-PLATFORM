@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrepLine · Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav" id="nav"></nav>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="kicker">Create account</div>
+        <h1>One profile. Every mock interview after that.</h1>
+        <p>Registration stores your name and login. Resumes, answers, and feedback stay attached to this account in MySQL.</p>
+      </div>
+      <div class="auth-card">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <label for="full_name">Full name</label>
+          <input id="full_name" name="full_name" required minlength="2" />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required minlength="6" />
+          <button class="full" type="submit">Create account</button>
+          <p class="error" id="authError"></p>
+          <p class="muted">Already registered? <a href="/index.html">Log in</a></p>
+        </form>
+      </div>
+    </section>
+    <footer>PrepLine · AI Interview Preparation Platform</footer>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

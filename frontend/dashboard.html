@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrepLine · Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav" id="nav"></nav>
+    <header class="page-head">
+      <div class="kicker">Studio</div>
+      <h1 id="welcome">Welcome back.</h1>
+    </header>
+    <section class="grid">
+      <article class="card"><p class="muted">Resumes</p><p class="score" id="resumeCount">0</p></article>
+      <article class="card"><p class="muted">Interviews</p><p class="score" id="interviewCount">0</p></article>
+      <article class="card"><p class="muted">Completed</p><p class="score" id="completedCount">0</p></article>
+    </section>
+    <div class="card">
+      <h2>Recent sessions</h2>
+      <div id="recentInterviews"></div>
+      <p style="margin-top:18px">
+        <a class="btn" href="/resume.html">Upload resume</a>
+        <a class="btn secondary" href="/interview.html">Start interview</a>
+      </p>
+    </div>
+    <footer>PrepLine · AI Interview Preparation Platform</footer>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
