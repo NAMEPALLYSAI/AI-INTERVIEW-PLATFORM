@@ -39,7 +39,7 @@ An AI-powered platform that helps users prepare for technical interviews.
 
 ✅ Virtual Environment Setup Completed
 
-🔄 Database Connection In Progress
+✅ Database Connection In Progress
 
 ## 📂 Folder Structure
 
